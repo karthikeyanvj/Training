@@ -12,7 +12,7 @@ def reverse():
 reverse()
 
 # using recursive method
-"""def reverse(s):
+def reverse(s):
     if len(s)== 0:
         return s
     else:
@@ -21,7 +21,7 @@ s=input("enter")
 print("the original:",end="")
 print(s)
 print("the original:",end="")
-print(reverse(s))"""
+print(reverse(s))
 
 
 
