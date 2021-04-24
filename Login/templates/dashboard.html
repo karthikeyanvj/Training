@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#profile {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#profile td, #profile th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#profile tr:nth-child(even){background-color: #f2f2f2;}
+
+#profile tr:hover {background-color: #ddd;}
+
+#profile th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<table id="profile">
+<thead>
+  <tr>
+    <th>Name</th>
+    <th>Email id </th>
+    <th>Password</th>
+    <th>Age</th>
+    <th>College</th>
+    <th>Degree</th>
+    <th>City</th>
+</thead>
+    </tr>
+  <tr>
+      {% for row in user %}
+    <td>{{row.name}}</td>
+    <td>{{row.email}}</td>
+    <td>{{row.password}}</td>
+    <td>{{row.age}}</td>
+    <td>{{row.college}}</td>
+    <td>{{row.degree}}</td>
+    <td>{{row.city}}</td>
+  </tr>
+    {% endfor %}
+</table>
+
+</body>
+</html>

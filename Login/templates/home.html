@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HomePage</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/index.css')}}">
+</head>
+<body style="background-color:#056988;">
+    <div class="home">
+        <h1>Welcome to my website</h1>
+        <h1>Please select any option</h1>
+        <form method="get" action="/logging">
+            <button type="Submit" value="login" class="button" >Login</button>
+        </form>
+         <form method="get" action="/signup">
+             <button type="Submit" value="signup" class="button">Signup</button>
+         </form>
+    </div>
+</body>
+</html>
