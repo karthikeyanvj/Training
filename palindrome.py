@@ -17,4 +17,14 @@ if b==c:
 else:
     print(a,"is not a palindrome")
     
-      
+# using for loop
+
+number=input("Enter any number :")
+i=0
+for i in range(len(number)):
+    if number[i]!=number[-1-i]:
+        print('It is not a palindrome')
+        break
+    else:
+        print('It is a palindrome')
+        break
