@@ -28,3 +28,8 @@ for i in range(len(number)):
     else:
         print('It is a palindrome')
         break
+       
+    
+
+
+       
